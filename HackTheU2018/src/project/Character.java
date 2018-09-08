@@ -23,7 +23,7 @@ public class Character {
 		String[] wizFeats = new String[] {"Spellcasting", "Arcane Recovery"};
 		
 		
-		
+		                  
 	}
 
 }
