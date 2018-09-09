@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 public class CharacterCreator {
 
@@ -100,6 +101,7 @@ public class CharacterCreator {
 		ArrayList<String> featsTraits = new ArrayList<String>(Arrays.asList(raceFeats.get(myCharacter.race)));
 		featsTraits.addAll(Arrays.asList(classFeats.get(myCharacter.classtype)));
 		
+		myCharacter.featuresTraits = featsTraits.stream().collect(Collectors.joining("\n"));
 		
 		// Ability scores (STR, DEX, CON, INT, WIS, CHAR)
 		int[] ability = raceBuffs.get(myCharacter.race);
