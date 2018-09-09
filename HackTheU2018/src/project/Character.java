@@ -65,8 +65,11 @@ public class Character {
 		int[] baxiBuff = { 0, 2, 0, 0, 0, 1 };
 		int[] tieBuff = { 0, 0, 0, 1, 0, 2 };
 
+<<<<<<< HEAD
 		int test;
 	}
+=======
+>>>>>>> branch 'master' of https://github.com/lrfalslev/HackTheU2018
 
 
 	public  String getRace(ArrayList<String> feats, int[] buffs)
