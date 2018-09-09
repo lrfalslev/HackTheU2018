@@ -6,7 +6,7 @@ public class roller {
 
 	public static int[] Roll() {
 
-		int[] traits = new int[6];
+		int[] rolls = new int[6];
 
 		Random rand = new Random();
 
@@ -32,9 +32,9 @@ public class roller {
 			lowRoll = Math.min(lowRoll, thirdRoll);
 			lowRoll = Math.min(lowRoll, fourthRoll);
 
-			traits[i] = (firstRoll + secondRoll + thirdRoll + fourthRoll - lowRoll);
+			rolls[i] = (firstRoll + secondRoll + thirdRoll + fourthRoll - lowRoll);
 		}
 		
-		return traits;
+		return rolls;
 }
 }

@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import javax.swing.JFileChooser;
 import javax.swing.JWindow;
+import javax.swing.filechooser.FileNameExtensionFilter;
+
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDDocumentCatalog;
 import org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm;
@@ -11,7 +13,7 @@ import org.apache.pdfbox.pdmodel.interactive.form.PDField;
 
 public class PrintPdf {
 
-	public static void print(Character character) throws IOException {
+	public static void print(project.CharacterCreator.Character myCharacter) throws IOException {
 
 		String[] fieldNames = new String[] {"ClassLevel", "CharacterName", "Race ", "XP", "STR", "STRmod", "HPMax", "DEX", "DEXmod ", 
 				"CON", "CONmod", "INT", "INTmod", "WIS", "WISmod", "CHA", "CHamod",	"AttacksSpellcasting", "Features and Traits"};
@@ -21,22 +23,66 @@ public class PrintPdf {
 		PDDocumentCatalog docCatalog = pdf.getDocumentCatalog();
 		PDAcroForm acroForm = docCatalog.getAcroForm();
 
-//		List<PDField> fields = acroForm.getFields();
-//		java.util.Iterator<PDField> it = fields.iterator();
-//		while(it.hasNext())
-//			System.out.println(it.next());
+		//		List<PDField> fields = acroForm.getFields();
+		//		java.util.Iterator<PDField> it = fields.iterator();
+		//		while(it.hasNext())
+		//			System.out.println(it.next());
+
+		//		if (acroForm != null)
+		//		{
+		//			for (String s : fieldNames)
+		//			{
+		//				PDField field = (PDField) acroForm.getField( s );
+		//				field.setValue("whazzup");							
+		//			}
+		//		}
 
 		if (acroForm != null)
 		{
-			for (String s : fieldNames)
-			{
-				PDField field = (PDField) acroForm.getField( s );
-				field.setValue("whazzup");							
-			}
+			PDField field = (PDField) acroForm.getField("ClassLevel");
+			field.setValue(myCharacter.classtype);	
+			field = (PDField) acroForm.getField("CharacterName");
+			field.setValue(myCharacter.name);	
+			field = (PDField) acroForm.getField("Race ");
+			field.setValue(myCharacter.race);	
+			field = (PDField) acroForm.getField("XP");
+			field.setValue("" + myCharacter.xp);	
+			field = (PDField) acroForm.getField("STR");
+			field.setValue("" + myCharacter.str);	
+			field = (PDField) acroForm.getField("STRmod");
+			field.setValue("" + myCharacter.strMod);	
+			field = (PDField) acroForm.getField("HPMax");
+			field.setValue("" + myCharacter.hpMax);	
+			field = (PDField) acroForm.getField("DEX");
+			field.setValue("" + myCharacter.dex);	
+			field = (PDField) acroForm.getField("DEXmod ");
+			field.setValue("" + myCharacter.dexMod);	
+			field = (PDField) acroForm.getField("CON");
+			field.setValue("" + myCharacter.con);	
+			field = (PDField) acroForm.getField("CONmod");
+			field.setValue("" + myCharacter.conMod);	
+			field = (PDField) acroForm.getField("INT");
+			field.setValue("" + myCharacter.inte);	
+			field = (PDField) acroForm.getField("INTmod");
+			field.setValue("" + myCharacter.intMod);	
+			field = (PDField) acroForm.getField("WIS");
+			field.setValue("" + myCharacter.wis);	
+			field = (PDField) acroForm.getField("WISmod");
+			field.setValue("" + myCharacter.wisMod);	
+			field = (PDField) acroForm.getField("CHA");
+			field.setValue("" + myCharacter.cha);	
+			field = (PDField) acroForm.getField("CHamod");
+			field.setValue("" + myCharacter.chaMod);	
+			field = (PDField) acroForm.getField("AttacksSpellcasting");
+			field.setValue(myCharacter.spells);	
+			field = (PDField) acroForm.getField("Features and Traits");
+			field.setValue(myCharacter.featuresTraits);							
 		}
 
 
 		JFileChooser fileChooser = new JFileChooser();
+		FileNameExtensionFilter filter = new FileNameExtensionFilter("PDF files", "pdf");
+		fileChooser.setFileFilter(filter);
 		if (fileChooser.showSaveDialog(new JWindow()) == JFileChooser.APPROVE_OPTION) {
 			File file = fileChooser.getSelectedFile();
 			// save to file

@@ -1,10 +1,9 @@
 package project;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Random;
-
-import project.Character.*;
 
 public class CharacterCreator {
 
@@ -87,47 +86,69 @@ public class CharacterCreator {
 		rand = new Random();
 	}
 
-	public Character makeCharacter() {
+	public Character makeCharacter(String sex) {
 
 		Character myCharacter = new Character();
 
-		myCharacter.Race = races[rand.nextInt(12 - 0 + 1) + 0];
+		if(sex.toLowerCase() == "male") myCharacter.name = getMale();
+		else myCharacter.name = getFemale();
 
-		myCharacter.ClassLevel = classes[rand.nextInt(12 - 0 + 1) + 0];
+		myCharacter.race = races[rand.nextInt(11 - 0 + 1) + 0];
 
-		myCharacter.CharacterName = "";
+		myCharacter.classtype = classes[rand.nextInt(11 - 0 + 1) + 0];
+
+		ArrayList<String> featsTraits = new ArrayList<String>(Arrays.asList(raceFeats.get(myCharacter.race)));
+		featsTraits.addAll(Arrays.asList(classFeats.get(myCharacter.classtype)));
 		
-		
+		// Ability scores (STR, DEX, CON, INT, WIS, CHAR)
+		int[] ability = raceBuffs.get(myCharacter.race);
 
-		String classtype = new String("");
-		String race;
-		String Alignment;
-		String level = new String("1");
-		int[] traits;
-		int[] buffs = new int[6];
-		ArrayList<String> feats = new ArrayList<String>();
-
-
-		race = Character.getRace(feats, buffs);
-		classtype = Character.getCharClass();
-
-		System.out.println(feats + "" + buffs);
-		traits = roller.Roll();	
+		int[] temp = roller.Roll();	
 		for(int idx = 0; idx < 6; idx++)
-		{
-			traits[idx] += 1;
-		}
+			ability[idx] += temp[idx];
+		
+		myCharacter.hpMax = hitPoints.getHit(myCharacter.classtype, ability[2]);
+		
+		myCharacter.str = ability[0];
+		myCharacter.dex= ability[1];
+		myCharacter.con= ability[2];
+		myCharacter.inte= ability[3];
+		myCharacter.wis= ability[4];
+		myCharacter.cha= ability[5];
+		
+		myCharacter.strMod = modifier.getMod(myCharacter.str);		
+		myCharacter.dexMod = modifier.getMod(myCharacter.dex);	
+		myCharacter.conMod = modifier.getMod(myCharacter.con);	
+		myCharacter.intMod = modifier.getMod(myCharacter.inte);	
+		myCharacter.wisMod = modifier.getMod(myCharacter.wis);	
+		myCharacter.chaMod = modifier.getMod(myCharacter.cha);
+		
+		myCharacter.xp = 0;
+		
+		myCharacter.spells = spells.getSpells(myCharacter.classtype);
+		
+		return myCharacter;
 
 	}
 
 	public String getMale() {
-		System.out.println(maleName[rand.nextInt(maleName.length) + 1]);
-		return maleName[rand.nextInt(maleName.length) + 1];
+		System.out.println(maleName[rand.nextInt(maleName.length)]);
+		return maleName[rand.nextInt(maleName.length)];
 	}
 
 	public String getFemale() {
-		System.out.println(femaleName[rand.nextInt(femaleName.length) + 1]);
-		return femaleName[rand.nextInt(femaleName.length) + 1] ;
+		System.out.println(femaleName[rand.nextInt(femaleName.length)]);
+		return femaleName[rand.nextInt(femaleName.length)] ;
+	}
+	
+	public class Character {
+
+		public String classtype, name, race, spells, featuresTraits;
+		public int xp, str, strMod, hpMax, dex, dexMod, con, conMod, inte, intMod, wis, wisMod, cha, chaMod;
+
+		public Character() {
+
+		}
 	}
 
 }
