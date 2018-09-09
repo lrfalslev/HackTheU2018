@@ -4,27 +4,28 @@ public class hitPoints {
     private static int[];
 
     public static int[] getHit(int conMod){
-        if (charClass "Barbarian") {
+
+        if (classtype = "Barbarian") {
             int hp = 12 + conMod;
-        } else if (charClass = "Bard") {
+        } else if (classtype = "Bard") {
             int hp = 8 + conMod;
-        } else if (charClass = "Cleric") {
+        } else if (classtype = "Cleric") {
             int hp = 8 + conMod;
-        } else if (charClass = "Druid") {
+        } else if (classtype = "Druid") {
             int hp = 8 + conMod;
-        } else if (charClass = "Fighter") {
+        } else if (classtype = "Fighter") {
             int hp = 8 + conMod;
-        } else if (charClass = "Monk") {
+        } else if (classtype = "Monk") {
             int hp = 8 + conMod;
-        } else if (charClass = "Paladin") {
+        } else if (classtype = "Paladin") {
             int hp = 10 + conMod;
-        } else if (charClass = "Ranger") {
+        } else if (classtype = "Ranger") {
             int hp = 10 + conMod;
-        } else if (charClass = "Rogue") {
+        } else if (classtype = "Rogue") {
             int hp = 8 + conMod;
-        } else if (charClass = "Sorcerer") {
+        } else if (classtype = "Sorcerer") {
             int hp = 6 + conMod;
-        } else if (charClass = "Warlock") {
+        } else if (classtype = "Warlock") {
             int hp = 8 + conMod;
         } else {
             int hp = 6 + conMod;

@@ -1,20 +1,20 @@
 package project;
 // Gives spells to chosen class if the class is a spell caster.
 public class spells  {
-        public static String[] spellSelect(String charClass){
+        public static String[] spellSelect(String classtype){
 
             String spellList = "";
-            if (charClass.equals("Wizard")) {
+            if (classtype.equals("Wizard")) {
                 spellList = ("Mage Hand, Fire Bolt, Prestidigitation, Burning Hands, Disguise Self, Detect Magic, Magic Missile, Mage Armor, Thunderwave");
-            } else if (charClass.equals("Bard")) {
+            } else if (classtype.equals("Bard")) {
                 spellList = ("Vicious Mockery, Friends, Cure Wounds, Silent Image, Thunderwave, Tasha's Hideous Laughter");
-            } else if (charClass.equals("Cleric")) {
+            } else if (classtype.equals("Cleric")) {
                 spellList = ("Spare the Dying, Guidance, Word of Radiance");
-            } else if (charClass.equals("Druid")) {
+            } else if (classtype.equals("Druid")) {
                 spellList = ("Primal Savagery, Thorn Whip");
-            }else if (charClass.equals("Sorcerer")) {
+            }else if (classtype.equals("Sorcerer")) {
                 spellList = ("Thunderclap, Mage Hand, Prestidigitation, Ray of Frost, Witch Bolt, Fog Cloud");
-            } else if (charClass.equals("Warlock")) {
+            } else if (classtype.equals("Warlock")) {
                 spellList = ("Eldritch Blast, Green-Flame Blade");
             }
             else {
