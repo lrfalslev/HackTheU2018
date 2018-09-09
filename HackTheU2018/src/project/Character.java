@@ -2,10 +2,10 @@ package project;
 
 public class Character {
 
-	public static void main(String args[]) {
-		String[] races = new String[] {  "Dragonborn", "Dwarf", "Elf", "Gnome", "Half-Elf",
-				"Halfling", "Half-Orc", "Human","Lizardfolk", "Orc", "Tabaxi", "Tiefling" };
+	Character() 
+	{
 
+<<<<<<< HEAD
 		String[] classes = new String[] { "Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk",
 				"Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard" };
 		
@@ -24,6 +24,11 @@ public class Character {
 		
 		int blah;
 		                  
+=======
+>>>>>>> branch 'master' of https://github.com/lrfalslev/HackTheU2018.git
 	}
-
 }
+
+
+
+
