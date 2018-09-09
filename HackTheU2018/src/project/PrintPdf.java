@@ -10,7 +10,7 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDDocumentCatalog;
 import org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm;
 import org.apache.pdfbox.pdmodel.interactive.form.PDField;
-
+import java.io.*;
 public class PrintPdf {
 
 	public static void print(project.CharacterCreator.Character myCharacter) throws IOException {
@@ -40,7 +40,7 @@ public class PrintPdf {
 		if (acroForm != null)
 		{
 			PDField field = (PDField) acroForm.getField("ClassLevel");
-			field.setValue(myCharacter.classtype);	
+			field.setValue(myCharacter.classtype + ": 1");	
 			field = (PDField) acroForm.getField("CharacterName");
 			field.setValue(myCharacter.name);	
 			field = (PDField) acroForm.getField("Race ");
