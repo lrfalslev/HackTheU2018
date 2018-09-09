@@ -85,7 +85,7 @@ public class PrintPdf {
 		fileChooser.setFileFilter(filter);
 		if (fileChooser.showSaveDialog(new JWindow()) == JFileChooser.APPROVE_OPTION) {
 			File file = fileChooser.getSelectedFile();
-			// save to file
+			// save the file
 
 			pdf.save(file);
 			pdf.close();
