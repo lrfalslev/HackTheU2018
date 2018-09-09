@@ -1,10 +1,9 @@
 package project;
 // Calculates the HP of character based on their chosen class.
 public class hitPoints {
-    private static int[];
-
-    public static int[] getHit(int conMod){
-
+    public static int getHit(int conMod){
+int hp;
+        hp = 0;
         if (classtype = "Barbarian") {
             int hp = 12 + conMod;
         } else if (classtype = "Bard") {

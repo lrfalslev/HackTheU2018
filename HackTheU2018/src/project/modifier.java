@@ -1,7 +1,7 @@
 package project;
 //Compares Ability Score to calculate the modifier.
 public class modifier {
-    public static int getMod (int abilityScore){
+    public static int getMod (int abilityScore) {
         if (abilityScore <= 1) {
             return -5;
         } else if (abilityScore <= 3) {
@@ -25,9 +25,7 @@ public class modifier {
         } else if (abilityScore <= 21) {
             return 5;
 
-        }
 
-
-
+    }
     }
 }
