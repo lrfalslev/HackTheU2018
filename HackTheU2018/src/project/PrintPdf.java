@@ -18,7 +18,7 @@ public class PrintPdf {
 		String[] fieldNames = new String[] {"ClassLevel", "CharacterName", "Race ", "XP", "STR", "STRmod", "HPMax", "DEX", "DEXmod ", 
 				"CON", "CONmod", "INT", "INTmod", "WIS", "WISmod", "CHA", "CHamod",	"AttacksSpellcasting", "Features and Traits"};
 
-		PDDocument pdf = PDDocument.load(new File("C:\\Users\\mildo\\Desktop\\HackU 2018 DND\\HackTheU2018\\HackTheU2018\\Character Sheet - Form Fillable.pdf"));
+		PDDocument pdf = PDDocument.load(new File("Character Sheet - Form Fillable.pdf"));
 		// C:\Users\mildo\Desktop\HackU 2018 DND\HackTheU2018\HackTheU2018\Character Sheet - Form Fillable.pdf
 		PDDocumentCatalog docCatalog = pdf.getDocumentCatalog();
 		PDAcroForm acroForm = docCatalog.getAcroForm();
