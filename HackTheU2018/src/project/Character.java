@@ -39,7 +39,7 @@ public class Character {
 		String[] tabFeats = new String[] { "Darkvision", "Feline Agility", "Cat's Claws", "Cat's Talent" };
 		String[] tiefFeats = new String[] { "Darkvision", "Hellish Resistance", "Infernal Legacy" };
 
-		// Buffs (STR, DEX, CONST, INT, WIS, CHAR)
+		// Buffs (STR, DEX, CON, INT, WIS, CHAR)
 		int[] dragBuff = { 2, 0, 0, 0, 0, 1 };
 		int[] dwarfBuff = { 0, 0, 2, 0, 0, 0 };
 		int[] elfBuff = { 0, 2, 0, 0, 0, 0 };
