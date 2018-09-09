@@ -16,8 +16,8 @@ public class nameGen {
 				"Rosalyn", "Sachil", "Saidi", "Tanika", "Tura", "Tylsa", "Vencia", "Xandrilla"};
 
 
-		getMale();
-		getFemale(female);
+		//getMale();
+		//getFemale(female);
 	}
 	public static String getMale (){
 		
