@@ -30,4 +30,4 @@ public class roller {
             lowRoll = Math.min(lowRoll, thirdRoll);
             lowRoll = Math.min(lowRoll, fourthRoll);
             System.out.println(firstRoll + secondRoll + thirdRoll + fourthRoll - lowRoll);
-        }
+        }}}
