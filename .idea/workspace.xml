@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12adfc89-976d-43d1-8306-0bfacd7412c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HackTheU2018/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/HackTheU2018/.classpath" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +28,7 @@
     <session id="1740879670">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.opened" value="2" />
@@ -71,22 +70,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/project/Character.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#1374#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/Character.java">
+        <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/PrintPdf.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="18" column="75" lean-forward="true" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
+            <state relative-caret-position="68">
+              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -121,8 +109,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -133,22 +120,6 @@
             <path>
               <item name="HackTheU2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="HackTheU2018" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HackTheU2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HackTheU2018" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HackTheU2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HackTheU2018" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HackTheU2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HackTheU2018" type="462c0819:PsiDirectoryNode" />
               <item name="HackTheU2018" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -163,16 +134,13 @@
               <item name="HackTheU2018" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HackTheU2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -213,13 +181,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1028000" />
+    <option name="totallyTimeSpent" value="1031000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1549" height="877" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11200537" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22483222" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -299,13 +266,7 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/project/Character.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#1374#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/Character.java">
       <provider selected="true" editor-type-id="text-editor">
