@@ -16,8 +16,7 @@ public class spells  {
                 spellList = "Primal Savagery", "Thorn Whip";
             }else if (CharacterClass = "Sorcerer") {
                 spellList = "Thunderclap", "Mage Hand", "Prestidigitation", "Ray of Frost", "Witch Bolt", "Fog Cloud";
-            }
-            else if (CharacterClass = "Warlock") {
+            } else if (CharacterClass = "Warlock") {
                 spellList = "Eldritch Blast", "Green-Flame Blade";
             }
             else {
