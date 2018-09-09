@@ -1,5 +1,6 @@
 package project;
 
+import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import javax.swing.JFileChooser;
@@ -19,7 +20,7 @@ public class PrintPdf {
 				"CON", "CONmod", "INT", "INTmod", "WIS", "WISmod", "CHA", "CHamod",	"AttacksSpellcasting", "Features and Traits"};
 
 		PDDocument pdf = PDDocument.load(new File("Character Sheet - Form Fillable.pdf"));
-
+		//C:\Users\mildo\Desktop\HackU 2018 DND\HackTheU2018\HackTheU2018\Character Sheet - Form Fillable.pdf
 		PDDocumentCatalog docCatalog = pdf.getDocumentCatalog();
 		PDAcroForm acroForm = docCatalog.getAcroForm();
 
