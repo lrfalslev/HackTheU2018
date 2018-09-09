@@ -29,8 +29,8 @@ public class nameGen {
 		Random rand = new Random();
 		System.out.println(name[rand.nextInt(name.length) + 1]);
 		return name[rand.nextInt(name.length) + 1];
+}
 
-	}
 	public static String getFemale (String[] female) {
 		Random rand = new Random();
 		System.out.println(female[rand.nextInt(16) + 1]);

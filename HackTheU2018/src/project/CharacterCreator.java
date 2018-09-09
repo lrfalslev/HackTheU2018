@@ -90,7 +90,7 @@ public class CharacterCreator {
 
 		Character myCharacter = new Character();
 
-		if(sex.toLowerCase() == "male") myCharacter.name = getMale();
+		if(sex.toLowerCase().equals("male")) myCharacter.name = getMale();
 		else myCharacter.name = getFemale();
 
 		myCharacter.race = races[rand.nextInt(11 - 0 + 1) + 0];
