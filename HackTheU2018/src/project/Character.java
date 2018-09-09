@@ -20,21 +20,19 @@ public class Character {
 
 
 		classFeats.put("Barbarian", new String[] { "Rage", "Unarmored Defense" });
-		classFeats.put("Bard", new String[] { "Spellcasting", "Bardic Inspiration" };
-		classFeats.put("Cleric", new String[] { "Spellcasting", "Divine Domain" };
-		classFeats.put("Druid", new String[] { "Druidic", "Spellcasting" };
-		classFeats.put("Fighter", new String[] { "Fighting Style", "Second Wind" };
-		classFeats.put("Monk",new String[] { "Unarmored Defense", "Martial Arts" };
-		classFeats.put("Paladin", new String[] { "Divine Sense", "Lay on Hands" };
-		String[] rangFeats = new String[] { "Favored Enemy", "Natural Explorer" };
-		String[] rogFeats = new String[] { "Expertise", "Sneak Attack", "Thieves' Cant" };
-		String[] sorcFeats = new String[] { "Spellcasting", "Sorcerous Origin" };
-		String[] warFeats = new String[] { "Otherworldly Patron", "Pact Magic" };
-		String[] wizFeats = new String[] { "Spellcasting", "Arcane Recovery" };
+		classFeats.put("Bard", new String[] { "Spellcasting", "Bardic Inspiration" });
+		classFeats.put("Cleric", new String[] { "Spellcasting", "Divine Domain" });
+		classFeats.put("Druid", new String[] { "Druidic", "Spellcasting" });
+		classFeats.put("Fighter", new String[] { "Fighting Style", "Second Wind" });
+		classFeats.put("Monk",new String[] { "Unarmored Defense", "Martial Arts" });
+		classFeats.put("Paladin", new String[] { "Divine Sense", "Lay on Hands" });
+		classFeats.put("Ranger", new String[] { "Favored Enemy", "Natural Explorer" });
+		classFeats.put("Rogue", new String[] { "Expertise", "Sneak Attack", "Thieves' Cant" });
+		classFeats.put("Sorcerer", new String[] { "Spellcasting", "Sorcerous Origin" });
+		classFeats.put("Warlock", new String[] { "Otherworldly Patron", "Pact Magic" });
+		classFeats.put("Wizard", new String[] { "Spellcasting", "Arcane Recovery" });
 
-
-		classFeats.put("Wizard", wizFeats);
-
+		
 		// Race Feats
 		String[] dbornFeats = new String[] { "Draconic Ancestry", "Breath Weapon", "Damage Resistance" };
 		String[] dwarfFeats = new String[] { "Darkvision", "Dwarven Resilience", "Dwarven Combat Training",
@@ -65,12 +63,8 @@ public class Character {
 		int[] baxiBuff = { 0, 2, 0, 0, 0, 1 };
 		int[] tieBuff = { 0, 0, 0, 1, 0, 2 };
 
-<<<<<<< HEAD
 		int test;
 	}
-=======
->>>>>>> branch 'master' of https://github.com/lrfalslev/HackTheU2018
-
 
 	public  String getRace(ArrayList<String> feats, int[] buffs)
 	{
