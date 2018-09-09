@@ -40,7 +40,7 @@ public class PrintPdf {
 		if (acroForm != null)
 		{
 			PDField field = (PDField) acroForm.getField("ClassLevel");
-			field.setValue(myCharacter.classtype + " 1");	
+			field.setValue(myCharacter.classtype + ": LVL 1");	
 			field = (PDField) acroForm.getField("CharacterName");
 			field.setValue(myCharacter.name);	
 			field = (PDField) acroForm.getField("Race ");
