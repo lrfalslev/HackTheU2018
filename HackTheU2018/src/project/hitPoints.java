@@ -4,7 +4,7 @@ public class hitPoints {
     private static int[];
 
     public static int[] getHit(int conMod){
-        if (charClass = "Barbarian") {
+        if (charClass "Barbarian") {
             int hp = 12 + conMod;
         } else if (charClass = "Bard") {
             int hp = 8 + conMod;
