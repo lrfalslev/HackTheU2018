@@ -1,7 +1,7 @@
 package project;
 
 import java.io.IOException;
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class Main {
 
@@ -9,19 +9,7 @@ public class Main {
 		
 		String sex = "";
 
-		Scanner keys = new Scanner(System.in);
-
-		while(!sex.toLowerCase().equals("male") && !sex.toLowerCase().equals("female"))
-		{			
-			System.out.println("Type male or female: ");
-			
-			sex = keys.nextLine();
-			
-			if(!sex.toLowerCase().equals("male") && !sex.toLowerCase().equals("female"))
-				System.out.println("Invalid input, ");
-		}
-		
-		keys.close();
+		sex = JOptionPane.showInputDialog("Is your character Male or Female?");
 		
 		CharacterCreator creator = new CharacterCreator();
 		

@@ -6,6 +6,8 @@ import java.util.HashMap;
 import java.util.Random;
 import java.util.stream.Collectors;
 
+import javax.swing.JOptionPane;
+
 public class CharacterCreator {
 
 	String[] races;
@@ -91,8 +93,9 @@ public class CharacterCreator {
 
 		Character myCharacter = new Character();
 
-		if(sex.toLowerCase().equals("male")) myCharacter.name = getMale();
-		else myCharacter.name = getFemale();
+		if(sex.toLowerCase().equals("male") | sex.toLowerCase().equals("m")) myCharacter.name = getMale();
+		else if(sex.toLowerCase().equals("female") | sex.toLowerCase().equals("f")) myCharacter.name = getFemale();
+		else JOptionPane.showMessageDialog(null, "Invalid input.");
 
 		myCharacter.race = races[rand.nextInt(11 - 0 + 1) + 0];
 

@@ -6,12 +6,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/lrfal/Downloads/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/lrfal/Downloads/fontbox-2.0.11.jar"/>
-	<classpathentry kind="lib" path="C:/Users/lrfal/Downloads/preflight-2.0.11.jar"/>
-	<classpathentry kind="lib" path="C:/Users/lrfal/Downloads/xmpbox-2.0.11.jar"/>
-	<classpathentry kind="lib" path="C:/Users/lrfal/Downloads/pdfbox-tools-2.0.11.jar"/>
-	<classpathentry kind="lib" path="C:/Users/lrfal/Downloads/pdfbox-debugger-2.0.11.jar"/>
-	<classpathentry kind="lib" path="C:/Users/lrfal/Downloads/pdfbox-2.0.11.jar"/>
+	<classpathentry kind="lib" path="C:/Users/oghoo/Downloads/pdfbox-app-2.0.11.jar"/>
+	<classpathentry kind="lib" path="C:/Users/oghoo/Downloads/commons-logging-1.2-bin.zip"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
