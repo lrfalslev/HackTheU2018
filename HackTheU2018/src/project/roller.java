@@ -1,5 +1,5 @@
 package project;
-
+// Rolls ability scores, 4d6 drops lowest roll.
 import java.util.Random;
 import java.lang.Math;
 public class roller {

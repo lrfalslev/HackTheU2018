@@ -1,5 +1,5 @@
 package project;
-
+// Returns random name based on Gender of Character.
 import java.util.Random;
 
 

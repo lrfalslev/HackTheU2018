@@ -1,5 +1,5 @@
 package project;
-
+// Calculates the HP of character based on their chosen class.
 public class hitPoints {
     private static int[];
 

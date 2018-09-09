@@ -1,5 +1,5 @@
 package project;
-
+// Gives spells to chosen class if the class is a spell caster.
 public class spells  {
         public static String[] spellSelect(String charClass) {
 
