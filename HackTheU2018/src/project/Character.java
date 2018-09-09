@@ -22,7 +22,7 @@ public class Character {
 		String[] warFeats = new String[] {"Otherworldly Patron", "Pact Magic"};
 		String[] wizFeats = new String[] {"Spellcasting", "Arcane Recovery"};
 		
-		
+		int blah;
 		                  
 	}
 
