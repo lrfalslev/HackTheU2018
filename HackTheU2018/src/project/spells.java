@@ -1,22 +1,22 @@
 package project;
 
 public class spells  {
-        public static String[] spellSelect(String CharacterClass){
+        public static String[] spellSelect(String charClass) {
 
             String spellList = "";
-            if (characterClass = "Wizard") {
+            if (charClass = "Wizard") {
                 spellList = "Mage Hand","Fire Bolt", "Prestidigitation", "Burning Hands", "Disguise Self", "Detect Magic",
                 "Magic Missile", "Mage Armor", "Thunderwave";
-            } else if (CharacterClass = "Bard") {
+            } else if (charClass = "Bard") {
                 spellList = "Vicious Mockery", "Friends", "Cure Wounds", "Silent Image", "Thunderwave",
                         "Tasha's Hideous Laughter";
-            } else if (CharacterClass = "Cleric") {
+            } else if (charClass = "Cleric") {
                 spellList = "Spare the Dying", "Guidance", "Word of Radiance";
-            } else if (CharacterClass = "Druid") {
+            } else if (charClass = "Druid") {
                 spellList = "Primal Savagery", "Thorn Whip";
-            }else if (CharacterClass = "Sorcerer") {
+            }else if (charClass = "Sorcerer") {
                 spellList = "Thunderclap", "Mage Hand", "Prestidigitation", "Ray of Frost", "Witch Bolt", "Fog Cloud";
-            } else if (CharacterClass = "Warlock") {
+            } else if (charClass = "Warlock") {
                 spellList = "Eldritch Blast", "Green-Flame Blade";
             }
             else {
@@ -31,4 +31,4 @@ public class spells  {
         public static String getSpells (String spellList){
     return spellList;
 
-        }
+        }}

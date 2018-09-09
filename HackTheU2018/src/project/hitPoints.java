@@ -1,33 +1,36 @@
 package project;
 
 public class hitPoints {
-    public static int[] getHit(int conMod) {
-        if ("Barbarian") {
+    private static int[];
+
+    public static int[] getHit(int conMod){
+        if (charClass = "Barbarian") {
             int hp = 12 + conMod;
-        } else if ("Bard") {
+        } else if (charClass = "Bard") {
             int hp = 8 + conMod;
-        } else if ("Cleric") {
+        } else if (charClass = "Cleric") {
             int hp = 8 + conMod;
-        } else if ("Druid") {
+        } else if (charClass = "Druid") {
             int hp = 8 + conMod;
-        } else if ("Fighter") {
+        } else if (charClass = "Fighter") {
             int hp = 8 + conMod;
-        } else if ("Monk") {
+        } else if (charClass = "Monk") {
             int hp = 8 + conMod;
-        } else if ("Paladin") {
+        } else if (charClass = "Paladin") {
             int hp = 10 + conMod;
-        } else if ("Ranger") {
+        } else if (charClass = "Ranger") {
             int hp = 10 + conMod;
-        } else if ("Rogue") {
+        } else if (charClass = "Rogue") {
             int hp = 8 + conMod;
-        } else if ("Sorcerer") {
+        } else if (charClass = "Sorcerer") {
             int hp = 6 + conMod;
-        } else if ("Warlock") {
+        } else if (charClass = "Warlock") {
             int hp = 8 + conMod;
         } else {
             int hp = 6 + conMod;
         }
-        }
+    return hp;
+    }
 
 
 
