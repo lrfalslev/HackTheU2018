@@ -104,6 +104,11 @@ public class CharacterCreator {
 	public DndCharacter makeCharacter(String sex) {
 
 		DndCharacter myCharacter = new DndCharacter();
+		
+		if(sex.startsWith("m"))
+				myCharacter.name = getMale();
+		else
+			myCharacter.name = getFemale();
 
 		myCharacter.race = races[rand.nextInt(11 - 0 + 1) + 0];
 
