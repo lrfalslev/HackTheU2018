@@ -5,7 +5,6 @@ public class Character {
 	Character() 
 	{
 
-<<<<<<< HEAD
 		String[] classes = new String[] { "Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk",
 				"Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard" };
 		
@@ -23,9 +22,8 @@ public class Character {
 		String[] wizFeats = new String[] {"Spellcasting", "Arcane Recovery"};
 		
 		int blah;
-		                  
-=======
->>>>>>> branch 'master' of https://github.com/lrfalslev/HackTheU2018.git
+		
+		int asgfijfasd;
 	}
 }
 
