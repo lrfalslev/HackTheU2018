@@ -14,7 +14,7 @@ import org.apache.pdfbox.pdmodel.interactive.form.PDField;
 
 public class PrintPdf {
 
-	public static void print(project.CharacterCreator.Character myCharacter) throws IOException {
+	public static void print(project.CharacterCreator.DndCharacter myCharacter) throws IOException {
 
 		String[] fieldNames = new String[] {"ClassLevel", "CharacterName", "Race ", "XP", "STR", "STRmod", "HPMax", "DEX", "DEXmod ", 
 				"CON", "CONmod", "INT", "INTmod", "WIS", "WISmod", "CHA", "CHamod",	"AttacksSpellcasting", "Features and Traits"};
@@ -106,7 +106,7 @@ public class PrintPdf {
 		if (fileChooser.showSaveDialog(window) == JFileChooser.APPROVE_OPTION) {
 			File file = fileChooser.getSelectedFile();
 			pdf.save(file);
-//			Desktop.getDesktop().edit(file);
+			Desktop.getDesktop().open(file);
 			pdf.close();
 		}
 		

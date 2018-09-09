@@ -101,13 +101,9 @@ public class CharacterCreator {
 		rand = new Random();
 	}
 
-	public Character makeCharacter(String sex) {
+	public DndCharacter makeCharacter(String sex) {
 
-		Character myCharacter = new Character();
-
-		if(sex.toLowerCase().equals("male") | sex.toLowerCase().equals("m")) myCharacter.name = getMale();
-		else if(sex.toLowerCase().equals("female") | sex.toLowerCase().equals("f")) myCharacter.name = getFemale();
-		else JOptionPane.showMessageDialog(null, "Invalid input.");
+		DndCharacter myCharacter = new DndCharacter();
 
 		myCharacter.race = races[rand.nextInt(11 - 0 + 1) + 0];
 
@@ -159,12 +155,12 @@ public class CharacterCreator {
 		return femaleName[rand.nextInt(femaleName.length)] ;
 	}
 	
-	public class Character {
+	public class DndCharacter {
 
 		public String classtype, name, race, spells, featuresTraits;
 		public int xp, str, strMod, hpMax, dex, dexMod, con, conMod, inte, intMod, wis, wisMod, cha, chaMod;
 
-		public Character() {
+		public DndCharacter() {
 
 		}
 	}
