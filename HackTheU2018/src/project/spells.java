@@ -1,10 +1,10 @@
 package project;
 
 public class spells  {
-        public static String[] getSpells(String CharacterClass){
+        public static String[] spellSelect(String CharacterClass){
 
-            spellList = "";
-            if (CharacterClass = "Wizard") {
+            String spellList = "";
+            if (characterClass = "Wizard") {
                 spellList = "Mage Hand","Fire Bolt", "Prestidigitation", "Burning Hands", "Disguise Self", "Detect Magic",
                 "Magic Missile", "Mage Armor", "Thunderwave";
             } else if (CharacterClass = "Bard") {
@@ -20,10 +20,16 @@ public class spells  {
             else if (CharacterClass = "Warlock") {
                 spellList = "Eldritch Blast", "Green-Flame Blade";
             }
-            else;
-            spellList = "None";
+            else {
+                spellList = "None";
             }
 
 
+
+
+
+        }
+        public static String getSpells (String spellList){
+    return spellList;
 
         }
