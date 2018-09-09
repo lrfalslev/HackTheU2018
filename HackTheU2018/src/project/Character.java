@@ -3,7 +3,8 @@ package project;
 public class Character {
 
 	Character() {
-
+		
+		//Races + Classes
 		String[] races = new String[] { "Dragonborn", "Dwarf", "Elf", "Gnome", "Half-Elf", "Halfling", "Half-Orc",
 				"Human", "Lizardfolk", "Orc", "Tabaxi", "Tiefling" };
 
