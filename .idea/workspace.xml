@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8dca18e3-1a65-48d3-b337-6eecfcf74e72" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/apidocs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/fontbox_1_8_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/pdfbox_2_0_11.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HackTheU2018/HackTheU2018.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HackTheU2018/HackTheU2018.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HackTheU2018/src/project/PrintPdf.java" beforeDir="false" afterPath="$PROJECT_DIR$/HackTheU2018/src/project/PrintPdf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HackTheU2018/src/project/roller.java" beforeDir="false" afterPath="$PROJECT_DIR$/HackTheU2018/src/project/roller.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/HackTheU2018/bin/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,26 +17,26 @@
     <session id="498555939">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="6" />
+          <entry key="java" value="11" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="6" />
+          <entry key="JAVA" value="11" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="12" />
-          <entry key="txt" value="22" />
+          <entry key="java" value="18" />
+          <entry key="txt" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12" />
-          <entry key="PLAIN_TEXT" value="22" />
+          <entry key="JAVA" value="18" />
+          <entry key="PLAIN_TEXT" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -53,6 +47,9 @@
           <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
     </session>
   </component>
   <component name="FileEditorManager">
@@ -61,19 +58,7 @@
         <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/PrintPdf.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,10 +67,67 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/modifier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/nameGen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/hitPoints.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/PrintPdf.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="21" column="101" selection-start-line="21" selection-start-column="101" selection-end-line="21" selection-end-column="101" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/roller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/spells.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/CharacterCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="85" column="28" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
+            <state relative-caret-position="459">
+              <caret line="51" column="64" lean-forward="true" selection-start-line="51" selection-start-column="64" selection-end-line="51" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -130,6 +172,22 @@
               <item name="HackTheU2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="HackTheU2018" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="HackTheU2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HackTheU2018" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HackTheU2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HackTheU2018" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HackTheU2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HackTheU2018" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -142,7 +200,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536508709302" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536511350387" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../fontbox-2.0.11.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -215,7 +273,7 @@
       <workItem from="1536469894102" duration="79000" />
       <workItem from="1536494444930" duration="8091000" />
       <workItem from="1536506367282" duration="699000" />
-      <workItem from="1536507121696" duration="1424000" />
+      <workItem from="1536507121696" duration="3737000" />
     </task>
     <task id="LOCAL-00001" summary="Dong ding">
       <created>1536505989112</created>
@@ -238,19 +296,19 @@
       <option name="project" value="LOCAL" />
       <updated>1536506548917</updated>
     </task>
-    <task id="LOCAL-00004" summary="Comments add to most of the classes to explain purpose.">
-      <created>1536476441228</created>
+    <task id="LOCAL-00004" summary="IT WORKS!!!!!">
+      <created>1536508792039</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1536476441228</updated>
+      <updated>1536508792039</updated>
     </task>
-    <task id="LOCAL-00005" summary="Spells cleaned up and better">
-      <created>1536477603382</created>
+    <task id="LOCAL-00005" summary="IT WORKS!!!!!">
+      <created>1536508910608</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1536477603382</updated>
+      <updated>1536508910608</updated>
     </task>
     <task id="LOCAL-00006" summary="Spells cleaned up and better">
       <created>1536477982385</created>
@@ -315,11 +373,11 @@
       <option name="project" value="LOCAL" />
       <updated>1536502983355</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4320000" />
+    <option name="totallyTimeSpent" value="6633000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="877" extended-state="6" />
@@ -335,7 +393,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3297587" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -403,7 +461,8 @@
     <MESSAGE value="Dong ding" />
     <MESSAGE value="bing dong" />
     <MESSAGE value="don ding" />
-    <option name="LAST_COMMIT_MESSAGE" value="don ding" />
+    <MESSAGE value="IT WORKS!!!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="IT WORKS!!!!!" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jrt://C:/Program Files/Java/jdk-10.0.2!/java.xml/com/sun/org/apache/bcel/internal/generic/NEW.class">
@@ -414,36 +473,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/GUI.java" />
     <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/Character.java" />
-    <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/spells.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/roller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/hitPoints.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
+        <state relative-caret-position="578">
           <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/spells.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/nameGen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="205">
           <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/modifier.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -452,30 +504,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/CharacterCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="85" column="28" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/CharacterCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="51" column="64" lean-forward="true" selection-start-line="51" selection-start-column="64" selection-end-line="51" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/PrintPdf.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+        <state relative-caret-position="289">
+          <caret line="21" column="101" selection-start-line="21" selection-start-column="101" selection-end-line="21" selection-end-column="101" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HackTheU2018/src/project/roller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -544,7 +603,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>fontbox-2.0.11</last-edited>
+          <last-edited>apidocs</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
