@@ -6,6 +6,5 @@
 !! Change the file path to your personal Form Fillable path !!
 PDDocument pdf = PDDocument.load(new File("Character Sheet - Form Fillable.pdf"));
 		EX: //C:\Users\mildo\Desktop\HackU 2018 DND\HackTheU2018\HackTheU2018\Character Sheet - Form Fillable.pdf
-    
-!! First answer if your character is Male or Female, then a pop-up box will appear where you will choose where to save the PDF to. Be sure to add .pdf to the end of the file name !!
+   
     
