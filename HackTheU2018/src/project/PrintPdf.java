@@ -1,15 +1,16 @@
 package project;
 
+import java.io.File;
+import java.io.IOException;
+import javax.swing.JFileChooser;
+import javax.swing.JWindow;
+import javax.swing.filechooser.FileNameExtensionFilter;
+
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDDocumentCatalog;
 import org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm;
 import org.apache.pdfbox.pdmodel.interactive.form.PDField;
-
-import javax.swing.*;
-import javax.swing.filechooser.FileNameExtensionFilter;
-import java.io.File;
-import java.io.IOException;
-
+import java.io.*;
 public class PrintPdf {
 
 	public static void print(project.CharacterCreator.Character myCharacter) throws IOException {
@@ -18,8 +19,6 @@ public class PrintPdf {
 				"CON", "CONmod", "INT", "INTmod", "WIS", "WISmod", "CHA", "CHamod",	"AttacksSpellcasting", "Features and Traits"};
 
 		PDDocument pdf = PDDocument.load(new File("Character Sheet - Form Fillable.pdf"));
-		// C:\Users\mildo\Desktop\HackU 2018 DND\HackTheU2018\HackTheU2018\Character Sheet - Form Fillable.pdf
-		// Character Sheet - Form Fillable.pdf
 
 		PDDocumentCatalog docCatalog = pdf.getDocumentCatalog();
 		PDAcroForm acroForm = docCatalog.getAcroForm();
@@ -41,7 +40,7 @@ public class PrintPdf {
 		if (acroForm != null)
 		{
 			PDField field = (PDField) acroForm.getField("ClassLevel");
-			field.setValue(myCharacter.classtype);	
+			field.setValue(myCharacter.classtype + ": 1");	
 			field = (PDField) acroForm.getField("CharacterName");
 			field.setValue(myCharacter.name);	
 			field = (PDField) acroForm.getField("Race ");
