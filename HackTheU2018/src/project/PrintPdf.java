@@ -81,9 +81,18 @@ public class PrintPdf {
 
 
 		JFileChooser fileChooser = new JFileChooser();
+		
 		FileNameExtensionFilter filter = new FileNameExtensionFilter("PDF files", "pdf");
 		fileChooser.setFileFilter(filter);
-		if (fileChooser.showSaveDialog(new JWindow()) == JFileChooser.APPROVE_OPTION) {
+	
+		java.util.logging.Logger.getLogger("org.apache.pdfbox").setLevel(java.util.logging.Level.OFF);
+		
+		JWindow window = new JWindow();
+		window.toFront();
+		window.repaint();
+		if (fileChooser.showSaveDialog(window) == JFileChooser.APPROVE_OPTION) {
+			window.toFront();
+			window.repaint();
 			File file = fileChooser.getSelectedFile();
 			// save the file
 

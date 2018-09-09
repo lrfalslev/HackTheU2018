@@ -9,11 +9,17 @@ public class Main {
 		
 		String sex = "";
 
-		System.out.println("Type male or female: ");
-		
 		Scanner keys = new Scanner(System.in);
-		
-		sex = keys.nextLine();
+
+		while(!sex.toLowerCase().equals("male") && !sex.toLowerCase().equals("female"))
+		{			
+			System.out.println("Type male or female: ");
+			
+			sex = keys.nextLine();
+			
+			if(!sex.toLowerCase().equals("male") && !sex.toLowerCase().equals("female"))
+				System.out.println("Invalid input, ");
+		}
 		
 		keys.close();
 		
