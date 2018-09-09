@@ -1,36 +1,15 @@
 package project;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-
 public class Character {
 
-	public  void Main(String[] args) {
+	String ClassLevel, CharacterName, Race, XP, STR, STRmod, HPMax, DEX, DEXmod, 
+	CON, CONmod, INT, INTmod, WIS, WISmod, CHA, CHamod,	AttacksSpellcasting, Features_and_Traits;
 
-		//lmao
-	}
-
-	public static String getRace(ArrayList<String> feats, int[] buffs)
-	{
-		//race
-		String[] races = new String[] { "Dragonborn", "Dwarf", "Elf", "Gnome", "Half-Elf", "Halfling", "Half-Orc",
-				"Human", "Lizardfolk", "Orc", "Tabaxi", "Tiefling" };
+	public Character() {
 		
-		String race = races[(int) (Math.random()*12)];
-		System.out.println(race);
-		return race;
-	}
+		String classtype, name, race, spells, features, traits;
+		int xp, str, strMod, hpMax, dex, dexMod, con, conMod, inte, intMod, wis, wisMod, cha, chaMod;
 
-	public static String getCharClass()
-	{
-		//class
-		String[] classes = new String[] { "Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin",
-				"Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard" };
-		
-		String classtype = classes[(int) (Math.random()*12)];
-		System.out.println(classtype);
-		return classtype;
 	}
 }
 

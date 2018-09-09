@@ -2,32 +2,27 @@ package project;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Random;
 
 import project.Character.*;
 
 public class CharacterCreator {
 
-	static Character myCharacter;
+	String[] races;
+	HashMap<String, String[]> raceFeats = new HashMap<String, String[]>();
+	HashMap<String, int[]> raceBuffs = new HashMap<String, int[]>();
+	String[] classes;
+	HashMap<String, String[]> classFeats = new HashMap<String, String[]>();
+	String[] maleName, femaleName;
+	Random rand;
 
-	public static void main(String[] args) {
-		// Class Feats
-		HashMap<String, String[]> classFeats = new HashMap<String, String[]>();
+	public CharacterCreator() {
 
-		classFeats.put("Barbarian", new String[] { "Rage", "Unarmored Defense" });
-		classFeats.put("Bard", new String[] { "Spellcasting", "Bardic Inspiration" });
-		classFeats.put("Cleric", new String[] { "Spellcasting", "Divine Domain" });
-		classFeats.put("Druid", new String[] { "Druidic", "Spellcasting" });
-		classFeats.put("Fighter", new String[] { "Fighting Style", "Second Wind" });
-		classFeats.put("Monk",new String[] { "Unarmored Defense", "Martial Arts" });
-		classFeats.put("Paladin", new String[] { "Divine Sense", "Lay on Hands" });
-		classFeats.put("Ranger", new String[] { "Favored Enemy", "Natural Explorer" });
-		classFeats.put("Rogue", new String[] { "Expertise", "Sneak Attack", "Thieves' Cant" });
-		classFeats.put("Sorcerer", new String[] { "Spellcasting", "Sorcerous Origin" });
-		classFeats.put("Warlock", new String[] { "Otherworldly Patron", "Pact Magic" });
-		classFeats.put("Wizard", new String[] { "Spellcasting", "Arcane Recovery" });
+		//race
+		races = new String[] { "Dragonborn", "Dwarf", "Elf", "Gnome", "Half-Elf", "Halfling", "Half-Orc",
+				"Human", "Lizardfolk", "Orc", "Tabaxi", "Tiefling" };
+
 		// Race Feats
-		HashMap<String, String[]> raceFeats = new HashMap<String, String[]>();
-
 		raceFeats.put("Dragonborn", new String[] { "Draconic Ancestry", "Breath Weapon", "Damage Resistance" });
 		raceFeats.put("Dwarf", new String[] { "Darkvision", "Dwarven Resilience", "Dwarven Combat Training",
 		"Stonecunning" });
@@ -43,9 +38,7 @@ public class CharacterCreator {
 		raceFeats.put("Tabaxi", new String[] { "Darkvision", "Feline Agility", "Cat's Claws", "Cat's Talent" });
 		raceFeats.put("Tiefling", new String[] { "Darkvision", "Hellish Resistance", "Infernal Legacy" });
 
-		// Race Buffs (STR, DEX, CONST, INT, WIS, CHAR)
-		HashMap<String, int[]> raceBuffs = new HashMap<String, int[]>();
-
+		// Race Buffs (STR, DEX, CONST, INT, WIS, CHAR)		
 		raceBuffs.put("Dragonborn", new int[] { 2, 0, 0, 0, 0, 1 });
 		raceBuffs.put("Dwarf", new int[] { 0, 0, 2, 0, 0, 0 });
 		raceBuffs.put("Elf", new int[] { 0, 2, 0, 0, 0, 0 });
@@ -59,8 +52,53 @@ public class CharacterCreator {
 		raceBuffs.put("Tabaxi", new int[] { 0, 2, 0, 0, 0, 1 });
 		raceBuffs.put("Tiefling", new int[] { 0, 0, 0, 1, 0, 2 });
 
-		String blahblahblah;
-		String name;
+
+
+		//class
+		classes = new String[] { "Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin",
+				"Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard" };
+
+		// Class Feats
+
+		classFeats.put("Barbarian", new String[] { "Rage", "Unarmored Defense" });
+		classFeats.put("Bard", new String[] { "Spellcasting", "Bardic Inspiration" });
+		classFeats.put("Cleric", new String[] { "Spellcasting", "Divine Domain" });
+		classFeats.put("Druid", new String[] { "Druidic", "Spellcasting" });
+		classFeats.put("Fighter", new String[] { "Fighting Style", "Second Wind" });
+		classFeats.put("Monk",new String[] { "Unarmored Defense", "Martial Arts" });
+		classFeats.put("Paladin", new String[] { "Divine Sense", "Lay on Hands" });
+		classFeats.put("Ranger", new String[] { "Favored Enemy", "Natural Explorer" });
+		classFeats.put("Rogue", new String[] { "Expertise", "Sneak Attack", "Thieves' Cant" });
+		classFeats.put("Sorcerer", new String[] { "Spellcasting", "Sorcerous Origin" });
+		classFeats.put("Warlock", new String[] { "Otherworldly Patron", "Pact Magic" });
+		classFeats.put("Wizard", new String[] { "Spellcasting", "Arcane Recovery" });
+
+
+		//names
+		maleName = new String[]{"Anlow", "Arando", "Bram", "Cale", "Dalkon", "Daylen", "Dodd", "Dungarth", "Dyrk",
+				"Eandro", "Falken", "Feck", "Fenton", "Gryphero", "Hagar", "Jeras", "Krynt", "Lavant", "Leyten", "Madian",
+				"Malfier", "Markus", "Meklan", "Namen", "Navaren", "Nerle", "Nilus", "Ningyan", "Norris", "Quentin",
+				"Semil", "Sevenson", "Steveren", "Talfen", "Tamond", "Taran", "Tavon", "Tegan", "Vanan", "Vincent"};
+
+		femaleName = new String[]{"Azura", "Brey", "Hallan", "Kasaki", "Lorelei", "Mirabel", "Pharana", "Remora",
+				"Rosalyn", "Sachil", "Saidi", "Tanika", "Tura", "Tylsa", "Vencia", "Xandrilla"};
+		
+		//random
+		rand = new Random();
+	}
+
+	public Character makeCharacter() {
+
+		Character myCharacter = new Character();
+
+		myCharacter.Race = races[rand.nextInt(12 - 0 + 1) + 0];
+
+		myCharacter.ClassLevel = classes[rand.nextInt(12 - 0 + 1) + 0];
+
+		myCharacter.CharacterName = "";
+		
+		
+
 		String classtype = new String("");
 		String race;
 		String Alignment;
@@ -68,8 +106,8 @@ public class CharacterCreator {
 		int[] traits;
 		int[] buffs = new int[6];
 		ArrayList<String> feats = new ArrayList<String>();
-		
-		
+
+
 		race = Character.getRace(feats, buffs);
 		classtype = Character.getCharClass();
 
@@ -79,11 +117,17 @@ public class CharacterCreator {
 		{
 			traits[idx] += 1;
 		}
-		
-		
-		//gui window
-//		javax.swing.SwingUtilities.invokeLater(new Runnable() {
-//			public void run() { project.GUI.createAndShowGUI();}
-//		});
+
 	}
+
+	public String getMale() {
+		System.out.println(maleName[rand.nextInt(maleName.length) + 1]);
+		return maleName[rand.nextInt(maleName.length) + 1];
+	}
+
+	public String getFemale() {
+		System.out.println(femaleName[rand.nextInt(femaleName.length) + 1]);
+		return femaleName[rand.nextInt(femaleName.length) + 1] ;
+	}
+
 }
