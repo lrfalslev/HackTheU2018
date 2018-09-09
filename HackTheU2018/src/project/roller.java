@@ -23,6 +23,7 @@ public class roller {
 		int i;
 		for (i = 0; i < 6; i++) {
 
+<<<<<<< HEAD
 			firstRoll = rand.nextInt(6) + 1;
 			secondRoll = rand.nextInt(6) + 1;
 			thirdRoll = rand.nextInt(6) + 1;
@@ -38,3 +39,10 @@ public class roller {
 		return traits;
 	}
 }
+=======
+            lowRoll = Math.min(firstRoll, secondRoll);
+            lowRoll = Math.min(lowRoll, thirdRoll);
+            lowRoll = Math.min(lowRoll, fourthRoll);
+            System.out.println(firstRoll + secondRoll + thirdRoll + fourthRoll - lowRoll);
+        }}}
+>>>>>>> branch 'master' of https://github.com/lrfalslev/HackTheU2018
