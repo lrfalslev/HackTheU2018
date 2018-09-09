@@ -100,6 +100,7 @@ public class CharacterCreator {
 		ArrayList<String> featsTraits = new ArrayList<String>(Arrays.asList(raceFeats.get(myCharacter.race)));
 		featsTraits.addAll(Arrays.asList(classFeats.get(myCharacter.classtype)));
 		
+		
 		// Ability scores (STR, DEX, CON, INT, WIS, CHAR)
 		int[] ability = raceBuffs.get(myCharacter.race);
 
