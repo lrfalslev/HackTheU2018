@@ -38,7 +38,7 @@ public class CharacterCreator {
 		raceFeats.put("Tabaxi", new String[] { "Darkvision", "Feline Agility", "Cat's Claws", "Cat's Talent" });
 		raceFeats.put("Tiefling", new String[] { "Darkvision", "Hellish Resistance", "Infernal Legacy" });
 
-		// Race Buffs (STR, DEX, CONST, INT, WIS, CHAR)		
+		// Race Buffs (STR, DEX, CON, INT, WIS, CHAR)
 		raceBuffs.put("Dragonborn", new int[] { 2, 0, 0, 0, 0, 1 });
 		raceBuffs.put("Dwarf", new int[] { 0, 0, 2, 0, 0, 0 });
 		raceBuffs.put("Elf", new int[] { 0, 2, 0, 0, 0, 0 });

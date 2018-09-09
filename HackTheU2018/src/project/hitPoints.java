@@ -1,40 +1,39 @@
 package project;
 // Calculates the HP of character based on their chosen class.
 public class hitPoints {
-    public static int getHit(int conMod) getCharClass()
+    public static int getHit;
+    String[] classes;
+    String[] classtype;
+    int conMod;
 
-    {
-int hp;
-        hp = 0;
-        if (classtype = "Barbarian") {
+    {int hp = 0;
+
+        if (classtype.equals("Barbarian")) {
             int hp = 12 + conMod;
-        } else if (classtype = "Bard") {
+        } else if (classtype.equals("Bard")) {
             int hp = 8 + conMod;
-        } else if (classtype = "Cleric") {
+        } else if (classtype.equals("Cleric")) {
             int hp = 8 + conMod;
-        } else if (classtype = "Druid") {
+        } else if (classtype.equals("Druid")) {
             int hp = 8 + conMod;
-        } else if (classtype = "Fighter") {
+        } else if (classtype.equals("Fighter")) {
             int hp = 8 + conMod;
-        } else if (classtype = "Monk") {
+        } else if (classtype.equals("Monk")) {
             int hp = 8 + conMod;
-        } else if (classtype = "Paladin") {
+        } else if (classtype.equals("Paladin")) {
             int hp = 10 + conMod;
-        } else if (classtype = "Ranger") {
+        } else if (classtype.equals("Ranger")) {
             int hp = 10 + conMod;
-        } else if (classtype = "Rogue") {
+        } else if (classtype.equals("Rogue")) {
             int hp = 8 + conMod;
-        } else if (classtype = "Sorcerer") {
+        } else if (classtype.equals("Sorcerer")) {
             int hp = 6 + conMod;
-        } else if (classtype = "Warlock") {
+        } else if (classtype.equals("Warlock")) {
             int hp = 8 + conMod;
         } else {
             int hp = 6 + conMod;
         }
-    return hp;
-    }
+        return hp;
 
-
-
-    }
-}
+    }}
+    // (Objects.equals(classtype, "Barbarian"))
