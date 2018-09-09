@@ -5,6 +5,9 @@ public class Character {
 	Character() 
 	{
 
+		String[] races = new String[] {  "Dragonborn", "Dwarf", "Elf", "Gnome", "Half-Elf",
+				"Halfling", "Half-Orc", "Human","Lizardfolk", "Orc", "Tabaxi", "Tiefling" };
+		
 		String[] classes = new String[] { "Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk",
 				"Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard" };
 		
@@ -21,9 +24,7 @@ public class Character {
 		String[] warFeats = new String[] {"Otherworldly Patron", "Pact Magic"};
 		String[] wizFeats = new String[] {"Spellcasting", "Arcane Recovery"};
 		
-		int blah;
 		
-		int asgfijfasd;
 	}
 }
 
