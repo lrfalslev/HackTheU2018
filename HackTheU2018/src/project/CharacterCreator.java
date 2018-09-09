@@ -83,13 +83,20 @@ public class CharacterCreator {
 				"Semil", "Sevenson", "Steveren", "Talfen", "Tamond", "Taran", "Tavon", "Tegan", "Vanan", "Vincent",
                 "Alarcion", "Alathar", "Ariandar", "Arromar", "Borel", "Bvachan", "Carydion", "Elgoth", "Farlien",
                 "Ferel", "Gaerlan", "Iafalior", "Kaelthorn", "Laethan", "Leliar", "Leodor", "Lorak", "Lorifir", "Morian",
-                "Oleran", "Rylef", "Savian", "Seylas", "Tevior", "Veyas", "Lukas", "Oliver"};
+                "Oleran", "Rylef", "Savian", "Seylas", "Tevior", "Veyas", "Lukas", "Oliver", "Bouchard", "Dawson",
+				"Frederick", "Ingram", "Madison", "Raulin", "Taran", "Abelard", "Boyle", "Deitrich", "Frederyk",
+				"Isleton", "Mainfroi", "Redwald", "Taylor", "Abraham", "Bran", "Denston", "Fulke", "Ivan",
+				"Mansel", "Reeve", "Templeton", "Addison", "Brice", "Derwin", "Galfrid", "Jakys", "Mathye", "Reginald",
+				"Theodore", "Alaire", "Brien", "Deryk", "Ganelon", "Jeger", "Morgant", "Reinholdt", "Thomas", "Albin",
+				"Bruce", "Donner", "Gared", "Jenlyns", "Morys", "Reynard", "Thrydwulf", "Aldebrand", "Bryce", "Drake",};
 
 		femaleName = new String[]{"Azura", "Brey", "Hallan", "Kasaki", "Lorelei", "Mirabel", "Pharana", "Remora",
 				"Rosalyn", "Sachil", "Saidi", "Tanika", "Tura", "Tylsa", "Vencia", "Xandrilla", "Caliope",
                 "Emily", "Piper", "Rixi", "Sabretha", "Teg", "Tilly", "Toira", "Vexia", "Vil", "Vzani",
-                "Zanthe", "Ziza"};
-		
+                "Zanthe", "Ziza", "Lucina", "Shina", "Emilia", "Syrana", "Resha", "Varin", "Wren", "Yuni", "Talis",
+				"Kessa", "Magaltie", "Aeris", "Desmina", "Krynna", "Asralyn", "Herra", "Pret", "Kory", "Afia", "Tessel",
+				"Rhiannon", "Zara", "Jesi", "Belen", "Rei", "Ciscra", "Temy", "Renalee", "Estyn", "Maarika", "Lynorr",
+				"Tiv", "Annihya", "Semet", "Tamrin", "Antia", "Reslyn", "Basak", "Vixra", "Pekka", "Xavia"};
 		//random
 		rand = new Random();
 	}
